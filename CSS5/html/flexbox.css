@@ -10,7 +10,7 @@
     flex-wrap:  wrap;*/
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: stretchv;
+    align-items:normal;
     height: 500px;
 
 }
@@ -22,4 +22,5 @@
     line-height: 95px;
     font-size: 30px;
     border: 2px solid black;
+    overflow:scroll
 }
