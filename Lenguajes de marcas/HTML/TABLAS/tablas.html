@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+
+<body>
+    <table border="4" style="width: 100%;">
+        <caption>TITULO TABLA</caption>
+        <thead> <!-- CABECERAS-->
+            <tr>
+                <td style="background-color: red;">COLUMNA 1</td>
+                <td style="background-color: aquamarine;">COLUMNA 2</td>
+                <td style="background-color: rgba(143, 189, 70, 0.74);">COLUMNA 3</td>
+            </tr>
+        </thead>
+        </tbody>
+        <tr> <!-- TR ES PARA CREAR TABLAS Y TD LO QUE ESTA DENTRO DE LA TABLA-->
+            <td colspan="2">F1 C1</td> <!--colspan para hacer espacio en la fila-->
+            <td>F1 C2</td>
+            <td>F1 C3</td>
+        </tr>
+        <tr>
+            <td>F2 C1</td>
+            <td rowspan="2">F2 C2</td>
+            <td>F2 C3</td>
+        </tr>
+        <tr>
+            <td>F3 C1</td>
+            <td>F3 C2</td>
+            <!--<td>F3 C3</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>F1</td>
+                <td>F2</td>
+                <td>F3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

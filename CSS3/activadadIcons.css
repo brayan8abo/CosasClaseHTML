@@ -1,0 +1,49 @@
+
+
+#primero:hover{
+    color: rgb(70, 247, 0);
+    cursor: pointer;
+    transform: scale(2.5);
+}
+    
+#primero{
+    padding: 15px;
+    margin:  auto;
+}
+#segundo:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(2.5);
+}
+#tercero:hover{
+    color: blue;
+    cursor: pointer;
+    transform: scale(2.5);
+}
+#segundo{
+   padding: 5px;
+    margin: auto;
+}
+#tercero{
+padding: 5px;
+    margin: auto;
+}
+
+#cuarto:hover{
+    color: saddlebrown;
+    cursor: pointer;
+    transform: scale(2.5);
+}
+#cuarto{
+    padding: 5px;
+    margin: auto;
+}
+
+.iconos{
+    display:  flex;
+    justify-content: space-around;
+}
+.Form{
+    font-size: large;
+   padding: 30px;
+}

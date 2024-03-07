@@ -1,0 +1,19 @@
+#div1{
+   height: 300px;
+   width: 500px;
+   overflow-x: auto;
+   overflow-y: scroll;
+}
+
+
+
+#div1 table{
+    width: 600px;
+    background-color: blue;
+    border: 3px solid brown;
+
+
+}
+td{
+    height: 40px;
+}

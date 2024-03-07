@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutua Madrileña</title>
+    <style>
+        fieldset {
+            display: inline-block;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        center {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #contenido {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSSmutua.css">
+</head>
+
+<body>
+    <div id="contenido">
+        <form action="" method="">
+            <p>
+            <fieldset style="border-bottom: 20%;">
+                <legend><i> DATOS PERSONALES</i></legend>
+                <label for="nombre">
+                    Usuario: </label><input type="text" name="Usuario" id="usuario" placeholder="Introduzca su usuario"
+                    maxlength="20" minlength="8" autofocus>
+                <label for="Contraseña">
+                    Contraseña: </label>
+                <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingresa tu contraseña" required
+                    maxlength="25" minlength="8" autofocus>
+                <br><br>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="Telefono" placeholder="C/ Pez 15" autofocus>
+                <label for="CP">Código Postal</label>
+                <input type="text" name="CodigoPostal" id="CP" placeholder="28037" autofocus>
+                <br> <br>
+                <label for="Poblacion">Población</label>
+                <input type="Poblacion" name="poblacion" id="poblacion" placeholder="Madrid" autofocus>
+                Provincia
+                <select name="" id="" size=" multiple">
+                    <option value="">Madrid</option>
+                    <option value="">Toledo</option>
+                    <option value="">Guadalajara</option>
+                </select>
+                <br> <br>
+            </fieldset>
+            <header>
+                <h3>Indica de que tipo es la incidencia</h3>
+                <input type="radio" name="radio1" id="">Inundación
+                <input type="radio" name="radio1" id="" checked>Rotura
+                <input type="radio" name="radio1" id="">Fuga de gas
+                <br><br>
+                <i> Indica la gravedad</i>
+                <select name="" id="">
+                    <option value="">Leve</option>
+                    <option value="">Grave</option>
+                    <option value="">Muy Grave</option>
+                </select>
+            </header>
+            <br>
+            <fieldset style="border-bottom: 20%;">
+                <legend><i>Información de la incidencia </i></legend>
+                <label for="time">Indica la fecha</label>
+                <input type="date">
+                <label for="time">Indica la hora</label>
+                <input type="time" name="" id="">
+            </fieldset>
+            <br><br>
+            <label for="checkbox"><i>Daños propios</i> </label><input type="checkbox" name="" id="">
+            <label for="checkbox"><i>Daños a terceros</i> </label><input type="checkbox" name="" id="">
+            <br><br>
+            <label for="file">Compartenos fotos de las incidencias:</label>
+            <input type="file">
+            <br><br>
+            <label for="textarea">Danos una breve información sobre el incidente</label><br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Escriba aquí sus comentarios"></textarea>
+            <br><br>
+            &ensp;<i>Enviar reporte</i><br>
+            &emsp; &emsp;<button type="submit">
+                <img src="./imagenes/send.png" width="30" alt="">
+            </button>
+            &emsp; &emsp; &emsp;
+            <br>
+
+            &ensp;<i>Restablecer Formulario</i><br>
+            &emsp; &emsp;<button type="reset">
+                <img src="./imagenes/reset.png" width="30" alt="">
+            </button>
+            <br>
+            <center>
+                <table style="background-color: rgba(134, 141, 58, 0.358);">
+                    <tr>
+                        <td>
+                            <h3>&#169; 2023. Todos los derechos reservados
+                        </td>
+                        </h3>
+                    </tr>
+                </table>
+                <div id="copy">
+
+                </div>
+            </center>
+
+            </center>
+
+
+
+</body>
+
+</html>

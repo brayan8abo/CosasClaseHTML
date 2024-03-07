@@ -1,0 +1,39 @@
+.contenedor {
+  max-width: 500px;
+  top: 100px;
+  left: 100px;
+  position: absolute;
+  height: 10000px;
+}
+
+/*a.caja1, a.caja2, a.caja3, a.caja4,a.caja5,a.caja6,a.caja7,a.caja8,a.caja9{
+    display: inline-block;
+    position: static;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    background-color:yellow;
+    
+}
+*/
+a[class|="caja"] {
+  display: inline-block;
+  position: static;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 10px dotted rgb(11, 33, 240);
+  background-color: yellow;
+}
+
+a.caja-5 {
+  background-color: rgb(255, 17, 0);
+  position: sticky;
+  left: 30px;
+  top: 50px;
+}

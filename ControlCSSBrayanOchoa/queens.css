@@ -1,0 +1,58 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    color: #333;
+
+}
+
+h2 {
+    font-size: 16px;
+    color: #666;
+}
+
+a:link {
+    color: blue;
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+    color: #000;
+}
+
+th {
+    font-size: 12px;
+    background-color: #666;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+table {
+    width: 390px;
+    border-collapse: collapse;
+}
+
+
+td,
+th {
+    padding: 10px;
+    border: 1px black solid;
+}
+#final{
+    background-color: #ccc;
+}
+legend{
+padding-left: 70px;
+}
+#Foto{
+    height: 200px;
+    width: 400px;
+
+}
+
+

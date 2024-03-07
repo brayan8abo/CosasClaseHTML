@@ -1,0 +1,27 @@
+div{
+    border: 2px solid yellow;
+    margin: 55px 0px 7px 7px;
+    padding: 7px;
+    background-color: aqua;
+    width: 100px;
+    height: 200px;
+
+}
+#caja1{
+    float: left;
+    overflow: hidden;
+}
+#caja2{
+    float: left;
+
+}
+#caja3{
+    float: left;
+    overflow: auto;
+
+}
+#caja4{
+    float: left;
+    overflow: scroll;
+
+}

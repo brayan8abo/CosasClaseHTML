@@ -1,0 +1,11 @@
+div{
+    height: 800px;
+    width: 800px;
+    border: 10px #af1b1b dotted unset;
+    background-image: linear-gradient(45deg, rgb(67, 138, 60), rgb(2, 20, 173),red,black,purple);
+font-size: 200PX;
+text-align: center;
+color: yellow;
+
+
+}

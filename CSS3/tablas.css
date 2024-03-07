@@ -1,0 +1,35 @@
+table {
+    border: 5px solid red;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+
+}
+
+td,
+th {
+    padding: 8px;
+    border: 10px solid green;
+
+}
+
+th {
+    font-size: 25px;
+    height: 50px;
+}
+
+td {
+    height: 50px;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(110, 135, 168);
+}
+
+tr:nth-child(odd) {
+    background-color: blue;
+}
+th{
+    background-color: burlywood;
+}

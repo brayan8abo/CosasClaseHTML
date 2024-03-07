@@ -1,0 +1,31 @@
+a,span,strong,i,em{
+
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+    }
+    
+    input, textarea{
+        width: 100%;
+    }
+    h1{
+        background-color:rgb(32, 139, 0) ;
+        width: 200px;
+        margin-top: 40px;
+    }
+    .caja{
+        width: 33%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .contenedor{
+        width: 100%;
+        border: 2px dotted red; /*border*/
+        height: 50px;
+        text-align: center;
+        line-height: 50px; /*altura a la linea se recomienda usar la misma del div para que quede en el centro*/
+        padding-top: 8px;
+    
+    }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div style="background-color: brown; order: 4;flex-shrink: 0;">1</div>
+        <div style="background-color: rgb(0, 81, 255); order: 2;">2</div>
+        <div style="background-color: deeppink; order: 3;">3</div>
+        <div style="background-color: rgb(255, 230, 0); order: 1;flex-shrink: 0;">4</div>
+        <div style="background-color: brown;flex-shrink: 2;">1</div>
+        <div style="background-color: rgb(0, 81, 255);flex-basis: 2000px;">2</div>
+        <div style="background-color: deeppink;">3</div>
+        <div style="background-color: rgb(0, 255, 242);flex-shrink: 0;">4</div>
+    </div>
+    <!-- flex grow le da el dañano al div, individualmente. como un colspan-->
+    <!-- el flex shrink le da un tamaño en lo posible mas grande y se mantiene -->
+    <!-- y el flex basis led a un tamaño de mas grande-->
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    background-color: yellowgreen;
+    padding: 10px;
+    border: 2px solid black;
+    /*flex-direction:row;
+    flex-wrap:  wrap;*/
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretchv;
+    height: 500px;
+
+}
+.flex-container div{
+    width: 100px;
+    margin: 10px;
+    background-color: cadetblue;
+    text-align: center;
+    line-height: 95px;
+    font-size: 30px;
+    border: 2px solid black;
+}

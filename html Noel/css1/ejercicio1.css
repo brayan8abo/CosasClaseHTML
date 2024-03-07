@@ -1,0 +1,56 @@
+li#a{
+color: blue;
+
+}
+li#b{
+
+}
+li#c {
+font-size: 25px;
+}
+li#d{
+    font-size: 30px;
+}
+
+li#e{
+    font-size: 35px;
+    color: blue;
+}
+#uno{
+    text-decoration: underline;
+    color: green;
+}
+#dos{
+    color: red;
+}
+#tres{
+
+    text-decoration: underline overline;
+}
+#cuatro{
+
+    font-size: 50px;
+}
+#cinco{
+
+    color : blue;
+    font-size: 20px;
+}
+#seis{
+
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+}
+
+#siete{
+
+    letter-spacing: 5px;
+    text-align: center
+    ;
+}
+
+#ocho{
+
+    
+}
