@@ -6,7 +6,7 @@
    'menu main aside'
    'menu footer footer';
    ;
-   grid-template-rows: 1fr 2fr 1fr;
+   grid-template-rows: 2fr 2fr 1fr;
    grid-template-columns: 20% 50% 30%;
    grid-column-gap: 2em;  
    grid-row-gap:  2em;

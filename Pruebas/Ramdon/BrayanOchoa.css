@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(71, 71, 158);
+  display: inline-block;
+}
+.contenedor {
+  grid-template-areas: "lateral lateral";
+
+}
+.barra {
+  background-color: white;
+  display: flex;
+  align-items: left;
+  padding: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.inicio {
+  width: 50px;
+}
+.servicios {
+  width: 75px;
+}
+
+.texto {
+  display: grid;
+  background-color: white;
+  justify-content: center;
+  justify-content: space-between;
+  width: 77%;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cuadroAzul {
+  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  left: 250px;
+  justify-self: end;
+  margin-left: 1500px;
+  float: inline-start;
+  position: static;
+}
+.textos {
+  text-decoration: underline;
+}
+.cuadroRosa {
+  width: 77%;
+  height: 100px;
+  background-color: rgb(235, 39, 104);
+  display: grid;
+  text-align: center;
+  line-height: 100px;
+  font-size: 22px;
+  color: white;
+}
+#inicio{
+    width: 50px;
+}
+#servicios{
+    width: 75px;
+}
