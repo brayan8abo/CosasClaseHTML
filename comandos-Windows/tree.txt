@@ -1,5 +1,6 @@
 Listado de rutas de carpetas
-El n£mero de serie del volumen es 0000001E 0A48:6A11
-C:\JAVA
-ÃÄÄÄclass
-ÀÄÄÄjava
+El n£mero de serie del volumen es 000000EF 0A48:6A11
+C:\USERS\ALUMNO CCC - TARDE\COSASCLASEHTML\COMANDOS-WINDOWS\ACTIVIDADMENU.BAT
+Ruta de acceso no v lida: \USERS\ALUMNO CCC - TARDE\COSASCLASEHTML\COMANDOS-WINDOWS\ACTIVIDADMENU.BAT
+No existe ninguna subcarpeta 
+
