@@ -1,17 +1,49 @@
-.container{
-    background-color: rgb(248, 0, 0);
-    width: 500px;
-    height: 250px;
-    margin: auto
+.container {
+    display: grid;
+  height: 250px;
+  width: 600px;
+  background-color: rgba(243, 165, 165, 0.993);
+  margin: auto;
 }
-.color1{
-    height: 10px;
-    width: 10px;
-    background-color: darkorange;
-    display: inline-block;
-    border-radius: 50%
+#texto {
+  text-align: right;
+  margin-right: 70px;
+  font-size: 35px;
 }
-#texto{
-    text-align: right;
-    margin-right: 65px;
+.foto {
+  margin-top: -160px;
+  margin-left: 5%;
 }
+#precio {
+  text-align: right;
+  margin-right: 40px;
+  font-size: 30px;
+}
+
+#quit {
+  font-size: x-large;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: -280px;  
+
+}
+.colores{
+    display: grid;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 166, 0);
+    border:  2px solid black;
+    border-radius: 30px;
+    grid-template-columns: auto auto auto auto;
+    
+}
+
+    
+    
+    
+
+
