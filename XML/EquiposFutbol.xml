@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Equipos>
+    <equipo>
+        <nombreEquipo>Atletico de Madrid</nombreEquipo>
+        <ciudad>Madrid</ciudad>
+        <entrenador>Mario</entrenador>
+        <jugadores>
+            <jugador posicion="Portero">
+                <nombre>Juan</nombre>
+                <nacionalidad>Peruano</nacionalidad>
+            </jugador>
+            <jugador posicion="Defensa">
+                <nombre>Pepito</nombre>
+                <nacionalidad>Gitano-Payo</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+
+    <equipo>
+        <nombreEquipo>Real Betis</nombreEquipo>
+    <ciudad>Sevilla</ciudad>
+    <entrenador>Nacho</entrenador>
+    <jugadores>
+        <jugador posicion="Delantero">
+            <nombre>Ignacio</nombre>
+            <nacionalidad>España</nacionalidad>
+        </jugador>
+        <jugador posicion="Medio">
+            <nombre>Juan</nombre>
+            <nacionalidad>Yonki</nacionalidad>
+        </jugador>
+    </jugadores>
+    </equipo>
+</Equipos>

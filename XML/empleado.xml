@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="empleados.css" type="text/css"?>
+<empleados>
+    <empleado>
+        <nombre>Juan</nombre>
+        <apellido1>Perez</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <edad>22</edad>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado>
+        <nombre>María</nombre>
+        <apellido1>Rodriguez</apellido1>
+        <apellido2>Sanchez</apellido2>
+        <edad>23</edad>
+        <puesto>Secretaria</puesto>
+    </empleado>
+    <empleado>
+        <nombre>Alvaro</nombre>
+        <apellido1>Martinez</apellido1>
+        <apellido2>Perez</apellido2>
+        <edad>50</edad>
+        <puesto>Vendedor</puesto>
+
+    </empleado>
+</empleados>
