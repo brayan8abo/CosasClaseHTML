@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos [
+    <!ELEMENT articulos (#PCDATA | codigo | id )*>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+]>
+<articulos>
+   <id>1234</id>
+   Escuadra
+   <codigo>JF-22</codigo>
+   <codigo>JF-33</codigo>
+   Cartabón
+   <id>5676</id>
+   <id>9876</id>
+</articulos>

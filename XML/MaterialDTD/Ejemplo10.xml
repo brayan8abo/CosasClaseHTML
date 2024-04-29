@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos [
+    <!ELEMENT articulos (articulo)+>
+    <!ELEMENT articulo ((codigo | id),nombre)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+]>
+<articulos>
+   <articulo>
+   <codigo>JF-29</codigo>
+      <nombre>Libreta</nombre>
+   </articulo>
+   <articulo>
+      <id>1234</id>
+      <nombre>Bolígrafo</nombre>
+   </articulo>
+</articulos>

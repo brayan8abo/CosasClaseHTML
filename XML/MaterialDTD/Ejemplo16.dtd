@@ -1,0 +1,9 @@
+<!ELEMENT deportistas (f1 | tenis)*>
+<!ELEMENT f1 (#PCDATA)>
+<!ATTLIST f1 pais CDATA #FIXED "España"><!--#IMPLIED>
+OPCIONAL EL ATRIBUTO fixed fijo el atributo entre comillas-->
+<!ATTLIST f1 nacimiento CDATA #REQUIRED> <!--OBLIGA
+A PONERLO-->
+<!ELEMENT tenis (#PCDATA)>
+<!-- Esto al vincularse con el xml lo que hace es determinar cual es el tipo de datos o nombres que
+debe usarse en el xml vinculado-->

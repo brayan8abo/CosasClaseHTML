@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas SYSTEM "Ejemplo16.dtd">
+<deportistas>
+    <f1 nacimiento="1/1/2001">Max Verstappen</f1>
+    <f1 nacimiento="2000/10/10">Fernando Alonso</f1>
+    <tenis>Rafael Nadal</tenis>
+</deportistas>
