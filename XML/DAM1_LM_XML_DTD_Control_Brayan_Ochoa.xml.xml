@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (datos,fecha_pedido,nombre_cliente,articulos,anotaciones,datos_envios,facturacion)>
+    <!ELEMENT datos (#PCDATA)>
+    <!ELEMENT fecha_pedido (#PCDATA)>
+    <!ATTLIST factura fecha_pedido CDATA #REQUIRED>
+    <!ELEMENT nombre_cliente (#PCDATA)>
+    
+    <!ELEMENT articulo (descripcion,codigo,precio,cantidad,precioTotal)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precioTotal (#PCDATA)>
+
+
+    <!ELEMENT anotaciones (#PCDATA)>
+
+    <!ELEMENT datos_envio (direccion,codigo_postal,destino,recibe)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT recibe (#PCDATA)>
+
+    <!ELEMENT Facturacion (nombre,codigo_postal,ciudad)>
+
+    
+
+
+  
+
+]>
+
+
+    <factura>
+        <datos><fecha_pedido>30 abril 2024</fecha_pedido>
+        <nombre_cliente>Jose Garcia</nombre_cliente>
+        </datos>
+        <articulos>
+            <descripcion>
+                Cortadora césped
+            </descripcion>
+            <codigo>
+                434-GJ
+            </codigo>
+            <precio>
+                178,76€
+            </precio>
+            <cantidad>1</cantidad>
+            
+            <descripcion>
+                Podadora
+            </descripcion>
+            <codigo>
+                957-DE
+            </codigo>
+            <precio>
+                11,34€ C/U
+            </precio>
+            <cantidad>2</cantidad>
+            <precioTotal>201.40€</precioTotal>
+        </articulos>
+        <anotaciones>
+            URGENTE
+        </anotaciones>
+        <datos_envio>
+            <direccion>Calle Monasterio,23</direccion>
+            <Codigo_postal>24004</Codigo_postal>
+            <destino>León</destino>
+            <recibe>Elena Pérez</recibe>
+        </datos_envio>
+        <Facturacion>
+            <nombre>Jose Garcia</nombre>
+            <direccion> Jaime Conquistador, 16</direccion>
+            <Codigo_postal>28045</Codigo_postal>
+            <ciudad>Madrid</ciudad>
+        </Facturacion>
+    </factura>

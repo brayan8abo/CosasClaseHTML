@@ -6,7 +6,7 @@
         <Hora-Salida>9:30</Hora-Salida>
         <Hora-Llegada>11:30</Hora-Llegada>
     </vuelos>
-    <vuelos codigo "V22" estado = "R">
+    <vuelos codigo = "V22" estado = "R">
         <origen>New York</origen>
         <destino>Chicago</destino>
         <Hora-Salida>10:15</Hora-Salida>
