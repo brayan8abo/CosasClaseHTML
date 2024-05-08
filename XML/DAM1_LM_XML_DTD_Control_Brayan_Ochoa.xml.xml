@@ -24,11 +24,6 @@
 
     <!ELEMENT Facturacion (nombre,codigo_postal,ciudad)>
 
-    
-
-
-  
-
 ]>
 
 
@@ -47,7 +42,6 @@
                 178,76€
             </precio>
             <cantidad>1</cantidad>
-            
             <descripcion>
                 Podadora
             </descripcion>
