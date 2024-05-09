@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elementos_simples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="elementos_simples.xsd">
-  <ciudad>A Coruña</ciudad>
+<elementos_simples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elementos_simples.xsd">
+  <ciudad>acoruña</ciudad>
   <fecha>2002</fecha>
   <hora>18:29:45</hora>
   <nota>7.5</nota>
@@ -9,4 +8,19 @@ xsi:noNamespaceSchemaLocation="elementos_simples.xsd">
 
 
   <curso grupo="B">2</curso>
+  <mes>7</mes>
+
+
+
+  <precios>
+    <precio>8</precio>
+    <precio>2.6</precio>
+    <precio>4.95</precio>
+    <precio>187</precio>
+  </precios>
+
+  <color>verde</color>
+
+  <letra>321</letra>
+  
 </elementos_simples>
