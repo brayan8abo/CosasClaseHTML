@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<expresiones-regulares xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<expresiones_regulares xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="expresiones-regulares.xsd">
+
    <expresiones>
       <expresion1>Capítulo 0</expresion1>
       <expresion2>Capítulo 0</expresion2>
@@ -21,4 +22,4 @@ xsi:noNamespaceSchemaLocation="expresiones-regulares.xsd">
       <expresion7>RSSSSSSSSSSS7</expresion7>
       <expresion8>COD646manzana</expresion8>
    </expresiones>
-</expresiones-regulares>
+</expresiones_regulares>

@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="expresiones_regulares">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Capitulo 1" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
+    <xs:element name="expresiones_regulares">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="expresiones" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="expresion1" type="expresiones1-4"/>
+                            <xs:element name="expresion2" type="expresiones1-4"/>
+                            <xs:element name="expresion3" type="expresiones1-4"/>
+                            <xs:element name="expresion4" type="expresiones1-4"/>
+                            <xs:element name="expresion5">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{2}"/>
+                                        <xs:pattern value=".{2}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="expresion6">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{4,}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="expresion7">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[R-S0-9]{3,}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="expresion8">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9]{10,13}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
 
-</xs:element>
+    </xs:element>
 
+    <xs:simpleType name="expresiones1-4">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Capítulo [0-9]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
