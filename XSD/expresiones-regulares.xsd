@@ -14,8 +14,8 @@
                             <xs:element name="expresion5">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="[a-zA-Z]{2}"/>
-                                        <xs:pattern value=".{2}"></xs:pattern>
+                                        <xs:pattern value="[abc]{2}"/>
+                                        <xs:pattern value=".{5}"></xs:pattern>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>

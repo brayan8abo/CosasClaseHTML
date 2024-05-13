@@ -70,4 +70,152 @@ añadir los atributos:
 </xs:sequence> 
 <xs:attribute name="numero" type="xs:integer"/> 
 </xs:complexType> 
-</xs:element> -->
+</xs:element>
+
+. / cualquier caracter
+\w / cualquier letra
+\d / cualquier digito
+\s / cualquier digito de espaciado, tabulador o espacio
+\d{n} / numero de digitos
+\d{n,m} /  entre n y m de digitos es decir si pongo 2,8 debe tener minimo 2 y maximo 8
+\d{n,} / debe tener n o mas digitos
+[abc] / debe tener uno de los caracteres, abc
+[A-Z] / debe tener caracteres en el rango de la A a la Z en mayuscula
+[M-Z-[P]] / Caracter de rango entre la m y la z excluyendo la P
+(a|b) / contiene una de las dos, o A o B
+pepe? / OPCIONAL
+pepe* / 0 o muchas veces
+(pepe)+ / 1 o mas veces
+
+
+
+xs:length 	Especifica una longitud fija.
+xs:minLength 	Especifica una longitud mínima.
+xs:maxLength 	Especifica una longitud máxima.
+xs:pattern 	Especifica un patrón de caracteres admitidos.
+xs:enumeration 	Especifica una lista de valores admitidos.
+xs:whiteSpace 	Especifica cómo se debe tratar a los posibles espacios en blanco, las tabulaciones, los saltos de línea y los retornos de carro que puedan aparecer.
+xs:maxInclusive 	Especifica que el valor debe ser menor o igual que el indicado.
+xs:maxExclusive 	Especifica que el valor debe ser menor que el indicado.
+xs:minExclusive 	Especifica que el valor debe ser mayor que el indicado.
+xs:minInclusive 	Especifica que el valor debe ser mayor o igual que el indicado.
+xs:totalDigits 	Especifica el número máximo de dígitos que puede tener un número.
+xs:fractionDigits 	Especifica el número máximo de decimales que puede tener un número.
+
+Seguidamente, se muestran algunos ejemplos de restricciones definidas con una o más facetas:
+xs:minExclusive y xs:maxInclusive
+
+EJEMPLO En el siguiente código se define un elemento llamado "mes" con la restricción de que el valor que tome no pueda ser menor que 1 ni mayor que 12:
+
+<xs:element name="mes">
+   <xs:simpleType>
+      <xs:restriction base="xs:integer">
+         <xs:minInclusive value="1"/>
+         <xs:maxInclusive value="12"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+
+    xs:simpleType permite definir un tipo simple y especificar sus restricciones.
+    xs:restriction sirve para definir restricciones de un xs:simpleType (como se ha hecho en este ejemplo). También sirve para definir restricciones de un xs:simpleContent o de un xs:complexContent. Estos elementos se estudiarán más adelante en este tutorial.
+    En el atributo base se indica el tipo de dato a partir del cual se define la restricción.
+    xs:minInclusive sirve para especificar que el valor debe ser mayor o igual que el indicado en su atributo value, (en este caso, mayor o igual que 1).
+    xs:maxInclusive sirve para especificar que el valor debe ser menor o igual que el indicado en su atributo value, (en este caso, menor o igual que 12).
+
+También se podría haber escrito:
+
+<xs:element name="mes" type="numeroMes"/>
+
+<xs:simpleType name="numeroMes">
+   <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="12"/>
+   </xs:restriction>
+</xs:simpleType>
+
+Haciendo esto, el tipo numeroMes definido, podría ser utilizado por otros elementos, ya que, no está contenido en el elemento "mes".
+Ejercicios resueltos
+
+    Edad entre 0 y 130 años
+    Precios de tres dígitos
+
+xs:enumeration
+
+EJEMPLO En el siguiente ejemplo se define un elemento llamado "color" con la restricción de que los únicos valores admitidos son: "verde", "amarillo" y "rojo".
+
+<xs:element name="color">
+   <xs:simpleType>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="verde"/>
+         <xs:enumeration value="amarillo"/>
+         <xs:enumeration value="rojo"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+
+    xs:enumeration sirve para definir una lista de valores admitidos.
+
+Ejercicio resuelto
+
+    Tipo de vehículo
+
+xs:pattern
+
+EJEMPLO En el siguiente ejemplo se define un elemento llamado "letra" con la restricción de que el único valor admitido es una de las letras minúsculas de la "a" a la "z":
+
+<xs:element name="letra">
+   <xs:simpleType>
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[a-z]"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+
+    xs:pattern sirve para definir un patrón de caracteres admitidos (en este caso se admite una única letra minúscula de la "a" a la "z"). El valor del patrón tiene que ser una expresión regular.
+
+Ejercicios resueltos
+
+    Iniciales de personas famosas
+    Iniciales al revés
+    Respuestas admitidas
+    Números y letras
+    Escribir expresiones regulares
+    Letras admitidas
+
+xs:length
+
+EJEMPLO En el siguiente ejemplo se define un elemento llamado "clave" con la restricción de que su valor tiene que ser una cadena de, exactamente, doce caracteres:
+
+<xs:element name="clave">
+   <xs:simpleType>
+      <xs:restriction base="xs:string">
+         <xs:length value="12"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+
+    xs:length sirve para especificar una longitud fija.
+
+Ejercicios resueltos
+
+    Longitud fija de una clave
+    Longitud mínima y máxima de una clave
+
+xs:whiteSpace
+
+EJEMPLO En el siguiente ejemplo se define un elemento llamado "dirección" con la restricción de que los espacios en blanco, las tabulaciones, los saltos de línea y los retornos de carro que aparezcan en él, se deben mantener (preserve):
+
+<xs:element name="direccion">
+   <xs:simpleType>
+      <xs:restriction base="xs:string">
+         <xs:whiteSpace value="preserve"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+
+    xs:whiteSpace sirve para especificar cómo se debe tratar a los posibles espacios en blanco, las tabulaciones, los saltos de línea y los retornos de carro que puedan aparecer.
+
+En vez de preserve también se puede utilizar:
+
+    replace para sustituir todas las tabulaciones, los saltos de línea y los retornos de carro por espacios en blanco.
+    collapse para, después de reemplazar todas las tabulaciones, los saltos de línea y los retornos de carro por espacios en blanco, eliminar todos los espacios en blanco únicos y sustituir varios espacios en blanco seguidos por un único espacio en blanco.
