@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Curriculum">
+        <xs:complexType name="datos_personales">
+            <xs:sequence>
+                <xs:element name="datos_personales" maxOccurs="unbounded"></xs:element>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="fecha_nacimiento" type="xs:date"/>
+                <xs:element name="lugar_nacimiento" type="xs:string"/>
+                <xs:element name="nacionalidad" type="xs:string"/>
+                <xs:element name="identificacion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([NIE-NIF])"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="numero_identificacion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-z]{7}"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="ruta_foto" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datos_de_contacto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tipo_via" type="xs:string"/>
+                <xs:element name="nombre_via" type="xs:string"/>
+                <xs:element name="numero">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="[0-100]?"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="portal">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="[0-100]?"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="piso">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="[0-100]?"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="puerta" type="xs:string"/>
+                <xs:element name="codigo_postal" type="xs:integer"/>
+                <xs:element name="pais" type="xs:string"/>
+                <xs:element name="correo" type="xs:string"/>
+                <xs:element name="telefono_contacto" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="formacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="centro" type="xs:string"/>
+                <xs:element name="fecha_inicio" type="xs:date"/>
+                <xs:element name="fecha_fin" type="xs:date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="idiomas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="materno" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="experiencia_laboral">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="puesto" type="xs:string"/>
+                <xs:element name="empresa" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="fecha_inicio" type="xs:date"/>
+            <xs:attribute name="fecha_fin" type="xs:date"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datos_opcionales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="aficiones" type="xs:string"/>
+                <xs:element name="carnet_conducir" type="xs:string"/>
+                <xs:element name="disponibilidad_para_viajar" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

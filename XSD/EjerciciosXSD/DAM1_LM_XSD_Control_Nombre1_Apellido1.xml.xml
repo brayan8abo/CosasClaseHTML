@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controlBrayanOchoa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Curriculum>
+        <datos_personales>
+            <nombre>Brayan Stiven</nombre>
+            <apellidos>Ochoa Botero</apellidos>
+            <fecha_nacimiento>08-11-2000</fecha_nacimiento>
+            <lugar_nacimiento>Medellin-Colombia</lugar_nacimiento>
+            <nacionalidad>Colombiana</nacionalidad>
+            <identificacion>NIE</identificacion>
+            <numero_identificacion>Z0141021J</numero_identificacion>
+            <ruta_foto>C:"dir2/foto.CV.png</ruta_foto>
+        </datos_personales>
+        <datos_de_contacto>
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Egipto</nombre_via>
+            <numero>28</numero>            <!-- opcional-->
+            <portal></portal>            <!-- opcional-->
+            <piso></piso>            <!-- opcional-->
+            <puerta></puerta>            <!-- opcional-->
+            <codigo_postal>28037</codigo_postal>            <!-- solo permite 5 digitos {5}-->
+            <pais>España</pais>
+            <correo>brayan8abo@outlook.es</correo>
+            <telefono_contacto>617289159</telefono_contacto>            <!-- opcional-->
+        </datos_de_contacto>
+        <formacion>
+            <titulo>Grado Superior en Desarrollo de Aplicaciones Multiplataforma</titulo>
+            <centro>CCC</centro>
+            <fecha_inicio>20-09-2023</fecha_inicio>
+            <fecha_fin>20-9-2025</fecha_fin>
+            <!-- Fechas atributos-->
+        </formacion>
+        <idiomas>
+            <materno>Español</materno>
+        </idiomas>
+        <experiencia_laboral>
+       <puesto>Asesor comercial</puesto> 
+            <empresa>The House Technology</empresa>
+            <fecha_inicio>1-1-2021</fecha_inicio>
+            <fecha_fin>6-12-2022</fecha_fin>
+            <!-- Atributos en las fechas-->
+        </experiencia_laboral>
+        <datos_opcionales>
+            <aficiones>
+            Videojuegos</aficiones>
+            <carnet_conducir>
+            B
+            </carnet_conducir>
+            <disponibilidad_para_viajar>
+            </disponibilidad_para_viajar>
+        </datos_opcionales>
+    </Curriculum>
+</controlBrayanOchoa>
