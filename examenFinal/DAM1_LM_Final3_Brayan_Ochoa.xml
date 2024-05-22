@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="DAM1_LM_Final3_Brayan_Ochoa.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<libreria>
+    <libro anio="2024">
+        <autor>epito qerez</autor>
+        <titulo>Cien muertes</titulo>
+        <categoria>Ficcion</categoria>
+        <precio>50</precio>
+        <moneda>Dolares</moneda>
+    </libro>
+    <libro anio="2010">
+        <autor>Juan Gomez</autor>
+        <titulo>La realidad cósmica</titulo>
+        <categoria>Ficcion</categoria>
+        <precio>75.99</precio>
+        <moneda>Euros</moneda>
+    </libro>
+    <libro>
+        <autor>Gabriel Garcia Marquez</autor>
+        <titulo>Cien años de soledad</titulo>
+        <categoria>No ficcion</categoria>
+        <precio>40</precio>
+        <moneda>Dolares</moneda>
+    </libro>
+    <libro>
+        <autor>Allan Poe</autor>
+        <titulo>El cienpies</titulo>    
+        <categoria>No ficcion</categoria>
+        <precio>85.99</precio>
+        <moneda>Euros</moneda>
+    </libro>
+</libreria>
