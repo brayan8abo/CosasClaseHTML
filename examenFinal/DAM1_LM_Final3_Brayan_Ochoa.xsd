@@ -9,13 +9,13 @@
                             <xs:element name="autor" type="xs:string"/>
                             <xs:element name="titulo" type="xs:string"></xs:element>
                             <xs:sequence>
-                                <xs:element name="categoria" type="xs:string">
-                                    <xs:complexType>
+                                <xs:element name="categoria">
+                                    <xs:simpleType>
                                         <xs:restriction base="xs:string">
                                             <xs:enumeration value="Ficcion"/>
                                             <xs:enumeration value="No ficcion"/>
                                         </xs:restriction>
-                                    </xs:complexType>
+                                    </xs:simpleType>
                                 </xs:element>
                             </xs:sequence>
                         </xs:sequence>
